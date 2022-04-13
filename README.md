@@ -25,7 +25,7 @@
 
 #3e2872
 
-<img  src='.paleta.png/' height='70px'>
+<img  src='./paleta.png' with='auto'>
 
 > This project was created using React.JS 
 
