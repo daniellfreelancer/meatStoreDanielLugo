@@ -1,9 +1,31 @@
-# Meat Store e-commerce 🏪🏪🏪
+#   Meat Store e-commerce 🏪
+
 * Red Meat: All livestock is considered red meat. This includes beef, pork, goat, and lamb.
 * Poultry: Commonly referred to as white meat, poultry includes chicken and turkey.
 * Plant based: Food industrie now bring to our a new concept of meat, using plants to re-create Plant Based Meats and more healthy than others.
 * Seafood: That includes fish, as well as crustaceans, like crab and lobster, and molluscs, like clams, oysters, scallops, and mussels.
 
+##  Styles
+* Fonts & colors used
+
+##  Font
+### Quicksand
+* https://fonts.google.com/specimen/Quicksand
+
+
+#1e0f3f
+
+#ffffff
+
+#f83797
+
+#4df5fd
+
+#2f1c5c
+
+#3e2872
+
+<img  src='.paleta.png/' height='70px'>
 
 > This project was created using React.JS 
 
