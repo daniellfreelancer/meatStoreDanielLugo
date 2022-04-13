@@ -16,7 +16,9 @@
 
 #1e0f3f
 
-#ffffff
+#ffffff 
+
+#ece7ca
 
 #f83797
 
