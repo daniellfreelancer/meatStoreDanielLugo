@@ -9,8 +9,7 @@ const CartW = (cantidadItem,contar) => {
 
    
       <div>
-          <form className="d-flex">
-              {/* <a className="nav-link button-style" href="#">LOGIN</a> */}
+          <form className="d-flex">              
               <img src={sCart} />
               <p className="item-count">{cantidadItem}</p>
           </form>
