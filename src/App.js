@@ -1,13 +1,15 @@
 import './App.css';
-import NavigatorMenu from './components/NavBar';
+import Navbar from './components/Navbar/Navbar.jsx';
+import './components/Navbar/NavbarS.css';
+
 
 function App() {
   return (
     
-    <div className="bodyElement">      
-      <header className="navbar">
-        <NavigatorMenu />
-      </header>
+    <div className="bodyElement">     
+
+        <Navbar />
+
     </div>
   );
 }

@@ -1,14 +1,14 @@
 import React from 'react';
-import  logoms2 from './logoms2.svg';
-import userIcon from './userIcon.png';
-import cartIcon from './cartIcon.png';
+
 
 function NavigatorMenu(){
+
+    
 
     return (
         <nav className="container">
             <div className=" container-fluid items-menu">                
-                <img className="navbar-brand" width='100px' src={logoms2} alt="LogoMeatstore"/>
+                <img className="navbar-brand" width='100px' alt="LogoMeatstore"/>
                 
                 <ul className="navs-item">
                     <li>Based Plants</li>
@@ -19,7 +19,7 @@ function NavigatorMenu(){
                         <button className="btn">
                             Login
                         </button>
-                        <img  width='36' height='36' src={userIcon} alt="LogoUser"/>
+                        <img  width='36' height='36'  alt="LogoUser"/>
                     </div>                        
                 </ul>
             </div>
