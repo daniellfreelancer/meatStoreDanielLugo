@@ -13,7 +13,6 @@ const CartW = (cantidadItem,contar) => {
               <img src={sCart} />
               <p className="item-count">{cantidadItem}</p>
           </form>
-
       </div>
 
   )

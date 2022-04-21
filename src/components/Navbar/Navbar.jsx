@@ -2,13 +2,16 @@ import React from 'react'
 import CartW from '../CartWidget/CartW';
 import logo2 from './LogoMeatStore.svg';
 
-const Navbar  = () => {
+const Navbar = () => {
+
+
+
 
     return (
 
         <nav className="navbar navbar-expand-lg navbar-dark bg-navbar">
             <div className="container">
-                <img src={logo2} className="navbar-brand" width='100px' alt="LogoMeatstore"/>
+                <img src={logo2} className="navbar-brand" width='100px' alt="LogoMeatstore" />
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -27,8 +30,11 @@ const Navbar  = () => {
                         <li className="nav-item">
                             <a className="nav-link" href="#">Sea Food</a>
                         </li>
+
                     </ul>
-                    <CartW />                    
+                    
+
+                    <CartW />
                 </div>
             </div>
         </nav>
