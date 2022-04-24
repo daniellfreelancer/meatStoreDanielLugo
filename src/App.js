@@ -12,9 +12,13 @@ function App() {
     
     
     <div className="bodyElement">     
-
-        <Navbar />
-        <ItemListContainer />
+        <header>
+          <Navbar />
+        </header>
+        
+        <main>
+          <ItemListContainer />
+        </main>
 
     </div>
   );

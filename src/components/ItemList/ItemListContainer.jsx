@@ -1,11 +1,27 @@
 import React from 'react'
+import Card from '../Card/Card'
 
-const ItemListContainer = (greeting) => {
+import './itemListContainer.css';
+
+const ItemListContainer = () => {
 
     
   return (
-    <div>
-        <p></p>
+    <div className="container-fluid itemList">
+
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      
+
     </div>
   )
 }

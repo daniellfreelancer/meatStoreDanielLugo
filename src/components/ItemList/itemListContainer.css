@@ -1,0 +1,36 @@
+
+/* 
+Paleta de colores:
+
+Morado #1e0f3f;
+Blanco #ffffff;
+Bone #ece7ca;
+fucsia #f83797;
+turquesa #4df5fd;
+Morado2 #2f1c5c;
+Morado3 #3e2872;
+
+*/
+
+.itemList {
+    display:flex;
+    flex-wrap: wrap;
+    padding: 10px 10px;
+    justify-content: space-around;
+
+}
+
+.btnAddCart {
+    background-color: #3e2872;
+    color:#ece7ca;
+}
+
+.btnAddCart:hover {
+    background-color: #2f1c5c;
+    color:#ece7ca;
+}
+
+.itemCart {
+    font-family: 'Quicksand', sans-serif;
+    padding: 20px 10px;
+}
