@@ -1,0 +1,38 @@
+/* 
+Paleta de colores:
+
+Morado #1e0f3f;
+Blanco #ffffff;
+Bone #ece7ca;
+fucsia #f83797;
+turquesa #4df5fd;
+Morado2 #2f1c5c;
+Morado3 #3e2872;
+
+*/
+
+
+.imgBadge{
+    display:flex;
+    margin-left: 225px;
+    padding-top: 0px;
+    padding: 10px 5px;
+    justify-items: center;
+}
+
+.badgeContainer {
+    position:absolute;
+}
+
+.card-body {
+    border-top: 2px solid #2f1c5c;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.card-img-top {
+    height: 300px;
+}
+

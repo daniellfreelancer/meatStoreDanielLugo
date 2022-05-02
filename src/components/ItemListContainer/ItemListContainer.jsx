@@ -1,5 +1,4 @@
 import React from 'react'
-import Card from '../Card/Card'
 import ItemList from '../ItemList/ItemList';
 
 import './itemListContainer.css';

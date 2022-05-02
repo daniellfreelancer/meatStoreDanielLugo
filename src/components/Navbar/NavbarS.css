@@ -24,8 +24,7 @@ Morado3 #3e2872;
 #navbarSupportedContent ul li a {
     display: flex;
     flex-wrap: wrap;
-    padding:7px 30px;
-    
+    padding:7px 30px;    
     justify-content: center;
     border-radius: 5px;
     margin:0px 20px;

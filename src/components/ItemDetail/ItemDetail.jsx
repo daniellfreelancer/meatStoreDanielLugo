@@ -1,12 +1,12 @@
 import React from 'react'
-import './Card.css';
+import './ItemDetail.css';
 import ItemCount from '../ItemCount/ItemCount';
 import imgItem from '../../Assets/imgItem.svg';
 import imgPin from '../../Assets/logoPin8.svg';
 
 
 
-const Card = () => {
+const Card = ({ product }) => {
   return (
 
       <div className="itemCart">
@@ -14,10 +14,12 @@ const Card = () => {
               <div className="badgeContainer">
                   <img src={imgPin} style={{ width: "70px" }} className="imgBadge" />
               </div>
-              <img src={imgItem} class="card-img-top" alt="..." />
+              <img src={ product.imgProduct || imgItem} class="card-img-top" alt="ImgProduct" />
               <div className="card-body">
-                  <h5 className="card-title">Item title</h5>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h5 className="card-title">{product.title}</h5>
+                  <p className="card-text">{product.description}</p>
+                  <p className="card-text"> Weight: {product.weight}</p>
+                  <p className="card-text">$ {product.price}</p>               
                   <div className=" d-flex justify-content-center p-1">
                       <ItemCount />
                   </div>
