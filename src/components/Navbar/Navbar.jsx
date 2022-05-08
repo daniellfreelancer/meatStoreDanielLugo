@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 import CartW from '../CartWidget/CartW';
 import logo2 from './LogoMeatStore.svg';
 
@@ -11,7 +12,10 @@ const Navbar = () => {
 
         <nav className="navbar navbar-expand-lg navbar-dark bg-navbar">
             <div className="container">
-                <img src={logo2} className="navbar-brand" width='100px' alt="LogoMeatstore" />
+                <NavLink to="/">
+                    <img src={logo2} className="navbar-brand" width='100px' alt="LogoMeatstore" />
+                </NavLink>
+                
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>

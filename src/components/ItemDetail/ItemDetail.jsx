@@ -6,7 +6,7 @@ import imgPin from '../../Assets/logoPin8.svg';
 
 
 
-const Card = ({ product }) => {
+const Card = ({ product:{title, description, weight, price,imgProduct} }) => {
   return (
 
       <div className="itemCart">
@@ -14,12 +14,12 @@ const Card = ({ product }) => {
               <div className="badgeContainer">
                   <img src={imgPin} style={{ width: "70px" }} className="imgBadge" />
               </div>
-              <img src={ product.imgProduct || imgItem} class="card-img-top" alt="ImgProduct" />
+              <img src={ imgProduct || imgItem} class="card-img-top" alt="ImgProduct" />
               <div className="card-body">
-                  <h5 className="card-title">{product.title}</h5>
-                  <p className="card-text">{product.description}</p>
-                  <p className="card-text"> Weight: {product.weight}</p>
-                  <p className="card-text">$ {product.price}</p>               
+                  <h5 className="card-title">{title}</h5>
+                  <p className="card-text">{description}</p>
+                  <p className="card-text"> Weight: {weight}</p>
+                  <p className="card-text">$ {price}</p>               
                   <div className=" d-flex justify-content-center p-1">
                       <ItemCount />
                   </div>

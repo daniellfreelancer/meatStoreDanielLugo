@@ -1,35 +1,16 @@
 import React, { useEffect, useState } from 'react'
-import Card from '../ItemDetail/ItemDetail';
-import { getProduct } from '../ItemDetailContainer/ItemDetailContainer';
 import './ItemList.css';
+import ItemCard from '../Item/ItemCard';
 
-
-const ItemList = () => {
-
-  const [listaProducts, setListaProducts] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
-
-  useEffect(()=>{
-
-    setIsLoading(true);
-
-    getProduct()
-    .then((result)=> setListaProducts(result))
-    .catch((error)=> console.log(error))
-    .finally(()=> setIsLoading(false));
-
-  },[]);
+const ItemList = ({product}) => {
 
   return (
-    <div className="itemList">
-              
-    {listaProducts.map((product) =>{
-
-      return <Card key={product.id} product={product} />
-    })}
-
+    <div className="itemList">              
+     {product.length > 0 ? (product.map((product) => (<ItemCard key={product.id} product={product}/>))) : (<h3>Loading ...</h3>)}
     </div>
+
   )
 }
+
 
 export default ItemList
