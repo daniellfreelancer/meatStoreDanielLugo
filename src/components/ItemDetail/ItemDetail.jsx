@@ -1,12 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './ItemDetail.css';
 import ItemCount from '../ItemCount/ItemCount';
 import imgItem from '../../Assets/imgItem.svg';
 import imgPin from '../../Assets/logoPin8.svg';
+//import {count} from '../ItemCount/ItemCount';
+import { Link } from 'react-router-dom';
 
 
 
 const Card = ({ product:{title, description, weight, price,imgProduct} }) => {
+
+    const [addToCart, setAddToCart] = useState(0)
+
+    const qtyOnAdd = (stock) => {
+        setAddToCart(stock)
+    }
+
+
   return (
 
       <div className="itemCart">
@@ -19,13 +29,13 @@ const Card = ({ product:{title, description, weight, price,imgProduct} }) => {
                   <h5 className="card-title">{title}</h5>
                   <p className="card-text">{description}</p>
                   <p className="card-text"> Weight: {weight}</p>
-                  <p className="card-text">$ {price}</p>               
-                  <div className=" d-flex justify-content-center p-1">
-                      <ItemCount />
-                  </div>
-                  <div className=" d-flex justify-content-center">
-                      <a href="#" className="btn btnAddCart text-align-center">Add to cart</a>
-                  </div>
+                  <p className="card-text">$ {price}</p>  
+
+                  {addToCart > 0 ? (
+                      <Link to={'/cart'} className='btn btn-success text-light' >Go to Cart</Link>
+                  ) : (
+                      <ItemCount onAdd={qtyOnAdd} />
+                  )}
               </div>
           </div>
       </div>
