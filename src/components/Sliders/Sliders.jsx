@@ -11,16 +11,16 @@ const Sliders = () => {
       <div id="carouselExampleControls" className="carousel slide container sliderMeatStore" data-bs-ride="carousel">
           <div className="carousel-inner">
               <div className="carousel-item active">
-                  <img src={sliderOne} className="d-block w-100" alt="..."/>
+                  <img src={sliderOne} className="d-block w-100 imgSlider" alt="sliderOne"/>
               </div>
               <div className="carousel-item">
-                  <img src={sliderTwo} className="d-block w-100" alt="..."/>
+                  <img src={sliderTwo} className="d-block w-100 imgSlider" alt="sliderTwo"/>
               </div>
               <div className="carousel-item">
-                  <img src={sliderThree} className="d-block w-100" alt="..."/>
+                  <img src={sliderThree} className="d-block w-100 imgSlider" alt="sliderThree"/>
               </div>
               <div className="carousel-item">
-                  <img src={sliderFour} className="d-block w-100" alt="..."/>
+                  <img src={sliderFour} className="d-block w-100 imgSlider" alt="sliderFour"/>
               </div>
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
