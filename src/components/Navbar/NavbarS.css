@@ -49,3 +49,7 @@ Morado3 #3e2872;
 .item-count {
     color:#4df5fd;
 }
+
+.navbar-brand:hover {
+    transform: scale(1.1);
+}

@@ -1,0 +1,36 @@
+/* 
+Paleta de colores:
+
+Morado #1e0f3f;
+Blanco #ffffff;
+Bone #ece7ca;
+fucsia #f83797;
+turquesa #4df5fd;
+Morado2 #2f1c5c;
+Morado3 #3e2872;
+
+*/
+.text {
+    font-family: 'Quicksand', sans-serif;
+    color: #4df5fd;
+    font-size: 20px;
+}
+
+.footerArea {
+    background-color: #2f1c5c;
+    border-top: 1px solid #4df5fd ;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+.footArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+

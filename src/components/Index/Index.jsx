@@ -1,5 +1,7 @@
 import React from 'react'
+import FooterComp from '../Footer/FooterComp'
 import ItemListContainer from '../ItemListContainer/ItemListContainer'
+import Sliders from '../Sliders/Sliders'
 
 
 const Index = () => {
@@ -8,9 +10,15 @@ const Index = () => {
 
 
         <main>
+          <Sliders/>
             <ItemListContainer/>
+            
         </main>
 
+        
+        
+        
+        
     </div>
   )
 }
