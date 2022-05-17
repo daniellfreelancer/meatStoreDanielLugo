@@ -5,40 +5,49 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 
-const ItemCount = ({stock, initialValue, onAdd}) => {
+const ItemCount = ({onAdd, stock, initialValue}) => {
 
-    const [count,setCount] = useState(1);
 
-    stock = 10;
+    const [cantidad, setCantidad] = useState(1)
+  
     
-    const add = (initialValue) => {
-        if(count < stock)
-        setCount(count + 1)
+    
+    function sumar(initialValue){
+      cantidad < stock ? setCantidad(cantidad + 1) : setCantidad(cantidad)
     }
-
-    const minus = (initialValue) => {
-        if(count > 1){
-            setCount(count - 1)
-        }
-
+    function restar(initialValue){
+     cantidad > 1 ? setCantidad (cantidad - 1) : setCantidad(cantidad)
     }
-
-  return (
-
-    <div >
+  
+  
+  
+    return (
+      <>
+        <div>
           <div className="itemCount">
-              <button onClick={minus} className="btn btn-dark">-</button>
-              <p>{count}</p>
-              <button onClick={add} className="btn btn-dark">+</button>
+            <button onClick={restar} className="btn btn-dark">
+              -
+            </button>
+            <p>{cantidad}</p>
+            <button onClick={sumar} className="btn btn-dark">
+              +
+            </button>
+          </div>
 
-          </div>       
-
-        <div className="">
-            <Link to="" onClick={ () => onAdd(count)} className="btn btnAddCart text-align-center">add to cart</Link>
+          <div className="itemCount">
+            <Link
+              to=""
+              onClick={() => onAdd(cantidad)}
+              className="btn btnAddCart text-align-center"
+            >
+              Add 
+            </Link>
+          </div>
         </div>
 
-    </div>
-  )
-}
+      </>
+    );
+  }
+  
 
 export default ItemCount

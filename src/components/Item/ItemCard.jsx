@@ -18,8 +18,9 @@ const ItemCard = ({product}) => {
                 <img src={ imgProduct || imgItem} class="card-img-top" alt="ImgProduct" />
                 <div className="card-body">
                     <h5 className="card-title">{title}</h5>
+                    <p className="card-text"> price: $ {price}</p>
                     {/* <p className="card-text">{description}</p>
-                    <p className="card-text"> Weight: {weight}</p>
+                    
                     <p className="card-text">$ {price}</p>                */}
                     {/* <div className=" d-flex justify-content-center p-1">
                         <ItemCount />

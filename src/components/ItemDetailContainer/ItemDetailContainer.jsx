@@ -17,7 +17,7 @@ const ItemDetailContainer = () => {
      const promes = new Promise((resolve, reject) => {
          setTimeout(()=> {
              resolve(filterNew)
-         },1500)
+         },)
      })
 
      promes.then((res) => {
@@ -32,12 +32,13 @@ const ItemDetailContainer = () => {
 
   return (
     <div className="container">
+      
        { product ? 
        <ItemDetail product={product}/> :
         <div className="spinner-border text-secondary" role="status">
           <span className="visually-hidden">Loading...</span>
         </div>
-        } 
+        }
     </div>
   )
 }

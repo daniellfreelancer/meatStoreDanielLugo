@@ -13,8 +13,17 @@ Morado3 #3e2872;
 */
 
 .spinnerLoading {
+    
     color: #4df5fd;
-    position: relative;
+    margin-left: 50%;
+    margin-top: 5%;
     width: 75px;
     height: 75px;
+}
+
+.loadingText {
+    text-align: center;
+    color: #4df5fd;
+    margin-top: 20%;
+    margin-left: 5%;
 }

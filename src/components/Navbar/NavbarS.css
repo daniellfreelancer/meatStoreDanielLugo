@@ -53,3 +53,22 @@ Morado3 #3e2872;
 .navbar-brand:hover {
     transform: scale(1.1);
 }
+
+.btnDrop {
+    font-family: 'Quicksand', sans-serif;
+    font-size:18px;
+    color:#ece7ca;
+}
+
+.btnDrop:hover {
+    background-color:#4df5fd;
+    color:#2f1c5c;
+
+
+}
+
+.navDrop {
+    color: #2f1c5c !important;
+}
+
+

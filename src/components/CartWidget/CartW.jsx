@@ -1,17 +1,27 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { Link } from 'react-router-dom';
+import { GlobalContext } from '../../Context/CartContext';
+
+
 import sCart from './sCart.svg';
 
-const CartW = (cantidadItem,contar) => {
-    
-    cantidadItem = 0;
+const CartW = () => {
+
+    const {cantidad, carrito} =useContext(GlobalContext)
+    let cantidadCArt = 0;
+
+    carrito.map((cantidad) => {
+        cantidadCArt = cantidadCArt + cantidad.stock;
+    })
+
 
   return (
 
    
       <div>
           <form className="d-flex">              
-              <img src={sCart} />
-              <p className="item-count">{cantidadItem}</p>
+              <Link to ="/Cart"> <img src={sCart} /></Link>
+              <p className="item-count">{cantidadCArt}</p>
           </form>
       </div>
 

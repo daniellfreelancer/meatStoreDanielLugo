@@ -1,0 +1,16 @@
+.containerCart{
+    display: flex;
+
+}
+
+.containerCart div {
+    margin: 10px 20px;
+    border: 2px solid blue;
+    padding: 20px 20px;
+}
+
+.cardCart {
+    margin-top: 15px;
+    background-color: aliceblue;
+
+}
