@@ -14,7 +14,7 @@ const ItemDetailContainer = () => {
     const getItem = async () => {
       const colItem = doc(db, 'products', id);
       try {
-        
+
         const docItem = await getDoc(colItem);
         setProduct({ id: docItem.id, ...docItem.data() });
 
@@ -27,14 +27,14 @@ const ItemDetailContainer = () => {
     useEffect(async () => {
       getItem();
 
-    }, []);
+    }, [setProduct]);
     
 
   return (
     <div className="container">
       
        { product ? 
-       <ItemDetail product={product}/> :
+       <ItemDetail product={product} {...product} /> :
         <div className="spinner-border text-secondary" role="status">
           <span className="visually-hidden">Loading...</span>
         </div>
