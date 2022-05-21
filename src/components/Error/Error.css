@@ -1,0 +1,14 @@
+.imgError {
+width: 100%;
+
+}
+
+@media (max-width: 414px) {
+
+    .imgError {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        
+        }
+    
+}

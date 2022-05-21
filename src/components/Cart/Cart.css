@@ -14,3 +14,13 @@
     background-color: aliceblue;
 
 }
+
+.imgCartEmpty {
+    width: 100%;
+}
+
+.containerCartEmpty {
+display: flex;
+text-align: center;
+justify-content: center;
+}

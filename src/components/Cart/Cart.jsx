@@ -1,19 +1,16 @@
 import React, { useContext } from 'react'
 import cartEmpty from '../../Assets/cartEmpty.png';
-
+import './Cart.css'
 import { Link, NavLink } from 'react-router-dom';
 import { GlobalContext } from '../../Context/CartContext';
 
 
 const Cart = () => {
   const { cantidad, carrito, eliminarProducto, vaciarCart, total } = useContext(GlobalContext) //el nombre del context a consumir, el proveedor
-    console.log(carrito.cantidad)
-
-    
 
   return (
     <>
-    <h1 className="container text-center title-cart">My cart</h1>
+    <h1 className="container text-center title-cart bg-info p-1">My cart</h1>
       {carrito.length > 0 ? carrito.map((prod, index) => {
 
         return (
@@ -33,15 +30,14 @@ const Cart = () => {
         )
       }) :
       
-        <div className="container" >
-          <img src={cartEmpty} alt="" />
-
+        <div className="container containerCartEmpty" >
+          <img src={cartEmpty} alt="EmptyCart" className='imgCartEmpty' />
         </div>
       
          
       }
       <div className="container text-end bg-info p-1" >
-        <h2>Total Cart: $ {total}</h2>
+        <h2>Total Pay: $ {total}</h2>
       </div>
       
 

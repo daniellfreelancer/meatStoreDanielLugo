@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import ItemDetail from '../ItemDetail/ItemDetail';
 import { data } from '../Products/itemProducts'
-
+import { doc, getDoc, getDocs, collection } from 'firebase/firestore';
+import { db } from '../../service/Firebase';
 
 
 const ItemDetailContainer = () => {
@@ -10,24 +11,23 @@ const ItemDetailContainer = () => {
     const {id} = useParams();
 
     const [product, setProduct] = useState([])
-    
-    const filterNew = data.find((prod) => prod.id === Number(id))
+    const getItem = async () => {
+      const colItem = doc(db, 'products', id);
+      try {
+        
+        const docItem = await getDoc(colItem);
+        setProduct({ id: docItem.id, ...docItem.data() });
 
-    useEffect(() => {
-     const promes = new Promise((resolve, reject) => {
-         setTimeout(()=> {
-             resolve(filterNew)
-         },)
-     })
+      } catch (err) {
+        console.error(err);
+      }
 
-     promes.then((res) => {
-         setProduct(res)
-     })
-     .then (() => console.log(product))
-     .catch((err) => console.log(err))
-    
-      return () => {}
-    }, [])
+    }
+
+    useEffect(async () => {
+      getItem();
+
+    }, []);
     
 
   return (

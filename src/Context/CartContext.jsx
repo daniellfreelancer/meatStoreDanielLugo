@@ -4,10 +4,6 @@ export const GlobalContext = createContext('')
     const GlobalStateContenxt = ({children}) => {
     const [carrito, setCarrito] = useState([])
 
-  //para que no se pierda la info, tenemos q hacer que se ejecute una sola vez
-  //cuando cargue el proyecto y lo coloque en el state.
-  //en caso de que no exista, le decimos q inicie como un arreglo
-
      useEffect(() => {
        const carritoLS = JSON.parse(localStorage.getItem('carrito')) ?? []
        setCarrito(carritoLS)
@@ -15,7 +11,7 @@ export const GlobalContext = createContext('')
      
      }, [])
      
-     //dependencia el carrito, cada vez q el carrito cambie se sicroniza con el localstorage
+
       useEffect(() => {
         localStorage.setItem('carrito', JSON.stringify(carrito))
       }, [carrito])
@@ -50,10 +46,6 @@ export const GlobalContext = createContext('')
     setCarrito([])
     }
     
-
-
-
-
 
   return (
     //en el value digo la informacion que voy a proveer
