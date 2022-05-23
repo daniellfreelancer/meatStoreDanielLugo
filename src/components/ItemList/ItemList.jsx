@@ -10,7 +10,7 @@ const ItemList = ({product}) => {
                     
      {
       product.length > 0 ? 
-     (product.map((product) => (<ItemCard key={product.id} product={product}/>))) :
+     (product.map((product) => (<ItemCard key={product.id} product={product} {...product}/>))) :
       (
         <div className="spinner-border  spinnerLoading" role="status">
           <span className="visually-hidden">Loading...</span>

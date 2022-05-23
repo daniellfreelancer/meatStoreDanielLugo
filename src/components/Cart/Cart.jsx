@@ -9,7 +9,7 @@ import { MdAlternateEmail } from 'react-icons/md'
 
 import { FiType} from 'react-icons/fi'
 
-const Cart = () => {
+const Cart = ({product}) => {
   const { cantidad, carrito, eliminarProducto, vaciarCart, total } = useContext(GlobalContext) //el nombre del context a consumir, el proveedor
 
 
@@ -76,6 +76,7 @@ const Cart = () => {
           <img src={cartEmpty} alt="EmptyCart" className="imgCartEmpty" />
         </div>
       )}
+      
       <div className="container text-end bg-info p-1">
         {/* Formulario */}
         <div className="bg-light p-2">

@@ -3,7 +3,6 @@ import { GlobalStateContenxt } from '../../Context/CartContext'
 
 
 const Formulario = ({total,carrito}) => {
-
 const { vaciarCart } = GlobalStateContenxt();
 const {fetchGenerateTicket } = useFirebase();
 
@@ -23,9 +22,7 @@ const {fetchGenerateTicket } = useFirebase();
   })
 
   const {
-    buyer: {
-      email, name, phone
-    }
+    buyer: {email, name, phone}
   } = formulario;
 
 

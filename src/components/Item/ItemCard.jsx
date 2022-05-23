@@ -26,7 +26,7 @@ const ItemCard = ({product}) => {
                         <ItemCount />
                     </div> */}
                     <div className=" d-flex justify-content-center">
-                        <Link to = {`item-detail/${id}`}><a className="btn btnAddCart text-align-center">Check it</a></Link> 
+                        <Link to = {`/item-detail/${id}`}><a className="btn btnAddCart text-align-center">Check it</a></Link> 
                     </div>
                 </div>
             </div>
